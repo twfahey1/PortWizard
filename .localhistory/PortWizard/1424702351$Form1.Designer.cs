@@ -41,7 +41,6 @@
             this.refreshProcessesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.refreshProcesssesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.RefreshButton = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoadingImage)).BeginInit();
             this.LoadingPanel.SuspendLayout();
@@ -86,7 +85,7 @@
             // endProcessToolStripMenuItem
             // 
             this.endProcessToolStripMenuItem.Name = "endProcessToolStripMenuItem";
-            this.endProcessToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.endProcessToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.endProcessToolStripMenuItem.Text = "End Process";
             this.endProcessToolStripMenuItem.Click += new System.EventHandler(this.endProcessToolStripMenuItem_Click);
             // 
@@ -142,23 +141,11 @@
             this.refreshProcesssesToolStripMenuItem.Text = "Refresh Processes";
             this.refreshProcesssesToolStripMenuItem.Click += new System.EventHandler(this.refreshProcessesToolStripMenuItem_Click);
             // 
-            // RefreshButton
-            // 
-            this.RefreshButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.RefreshButton.Location = new System.Drawing.Point(0, 102);
-            this.RefreshButton.Name = "RefreshButton";
-            this.RefreshButton.Size = new System.Drawing.Size(739, 62);
-            this.RefreshButton.TabIndex = 6;
-            this.RefreshButton.Text = "Refresh";
-            this.RefreshButton.UseVisualStyleBackColor = true;
-            this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(739, 164);
-            this.Controls.Add(this.RefreshButton);
             this.Controls.Add(this.ProcessListView);
             this.Controls.Add(this.LoadingPanel);
             this.Name = "Form1";
@@ -188,7 +175,6 @@
         private System.Windows.Forms.ToolStripMenuItem refreshProcessesToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem refreshProcesssesToolStripMenuItem;
-        private System.Windows.Forms.Button RefreshButton;
     }
 }
 

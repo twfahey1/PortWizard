@@ -40,7 +40,6 @@ namespace PortWizard
     
         private void init()
         {
-            RefreshButton.Visible = false;
             ProcessListView.Items.Clear();
             List<Port> _CurrentStatPorts = GetNetStatPorts();
 
@@ -57,7 +56,6 @@ namespace PortWizard
             }
             if (ProcessListView.Items.Count == 0){
                 MessageBox.Show("No conflicting processes detected.");
-                RefreshButton.Visible = true;
             }
         }
         
@@ -179,7 +177,6 @@ namespace PortWizard
             if (e.Button == System.Windows.Forms.MouseButtons.Right)
             {
                 ListViewItem item = listView.GetItemAt(e.X, e.Y);
-                
                 if (item != null)
                 {
                     item.Selected = true;
@@ -213,11 +210,6 @@ namespace PortWizard
         }
 
         private void refreshProcessesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            init();
-        }
-
-        private void RefreshButton_Click(object sender, EventArgs e)
         {
             init();
         }
