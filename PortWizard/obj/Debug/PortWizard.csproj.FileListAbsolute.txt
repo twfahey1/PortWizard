@@ -1,0 +1,9 @@
+c:\users\tyler\documents\PortWizard1.0\PortWizard\PortWizard\bin\Debug\PortWizard.exe.config
+c:\users\tyler\documents\PortWizard1.0\PortWizard\PortWizard\bin\Debug\PortWizard.exe
+c:\users\tyler\documents\PortWizard1.0\PortWizard\PortWizard\bin\Debug\PortWizard.pdb
+c:\users\tyler\documents\PortWizard1.0\PortWizard\PortWizard\obj\Debug\PortWizard.csprojResolveAssemblyReference.cache
+c:\users\tyler\documents\PortWizard1.0\PortWizard\PortWizard\obj\Debug\PortWizard.Form1.resources
+c:\users\tyler\documents\PortWizard1.0\PortWizard\PortWizard\obj\Debug\PortWizard.Properties.Resources.resources
+c:\users\tyler\documents\PortWizard1.0\PortWizard\PortWizard\obj\Debug\PortWizard.csproj.GenerateResource.Cache
+c:\users\tyler\documents\PortWizard1.0\PortWizard\PortWizard\obj\Debug\PortWizard.exe
+c:\users\tyler\documents\PortWizard1.0\PortWizard\PortWizard\obj\Debug\PortWizard.pdb
