@@ -29,28 +29,23 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ProcessListView = new System.Windows.Forms.ListView();
             this._processName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this._portnum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._PID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.endProcessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.refreshProcessesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LoadingImage = new System.Windows.Forms.PictureBox();
             this.LoadingTextLabel = new System.Windows.Forms.Label();
             this.LoadingPanel = new System.Windows.Forms.Panel();
+            this._PID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.refreshProcessesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.refreshProcesssesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RefreshButton = new System.Windows.Forms.Button();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoadingImage)).BeginInit();
             this.LoadingPanel.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
-            this.contextMenuStrip3.SuspendLayout();
             this.SuspendLayout();
             // 
             // ProcessListView
@@ -80,10 +75,6 @@
             this._portnum.Text = "Port Number Used";
             this._portnum.Width = 125;
             // 
-            // _PID
-            // 
-            this._PID.Text = "PID";
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -98,13 +89,6 @@
             this.endProcessToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.endProcessToolStripMenuItem.Text = "End Process";
             this.endProcessToolStripMenuItem.Click += new System.EventHandler(this.endProcessToolStripMenuItem_Click);
-            // 
-            // refreshProcessesToolStripMenuItem
-            // 
-            this.refreshProcessesToolStripMenuItem.Name = "refreshProcessesToolStripMenuItem";
-            this.refreshProcessesToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.refreshProcessesToolStripMenuItem.Text = "Refresh Processes";
-            this.refreshProcessesToolStripMenuItem.Click += new System.EventHandler(this.refreshProcessesToolStripMenuItem_Click);
             // 
             // LoadingImage
             // 
@@ -133,6 +117,17 @@
             this.LoadingPanel.Size = new System.Drawing.Size(138, 100);
             this.LoadingPanel.TabIndex = 4;
             // 
+            // _PID
+            // 
+            this._PID.Text = "PID";
+            // 
+            // refreshProcessesToolStripMenuItem
+            // 
+            this.refreshProcessesToolStripMenuItem.Name = "refreshProcessesToolStripMenuItem";
+            this.refreshProcessesToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.refreshProcessesToolStripMenuItem.Text = "Refresh Processes";
+            this.refreshProcessesToolStripMenuItem.Click += new System.EventHandler(this.refreshProcessesToolStripMenuItem_Click);
+            // 
             // contextMenuStrip2
             // 
             this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -158,29 +153,6 @@
             this.RefreshButton.UseVisualStyleBackColor = true;
             this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
             // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip3;
-            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "PortWizard - Check Ports";
-            this.notifyIcon1.Visible = true;
-            this.notifyIcon1.DoubleClick += new System.EventHandler(this.notifyIcon1_DoubleClick);
-            // 
-            // contextMenuStrip3
-            // 
-            this.contextMenuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
-            this.contextMenuStrip3.Name = "contextMenuStrip3";
-            this.contextMenuStrip3.Size = new System.Drawing.Size(114, 26);
-            this.contextMenuStrip3.Text = "Restore";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(113, 22);
-            this.toolStripMenuItem1.Text = "Restore";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,7 +161,6 @@
             this.Controls.Add(this.RefreshButton);
             this.Controls.Add(this.ProcessListView);
             this.Controls.Add(this.LoadingPanel);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "PortWizard";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -199,7 +170,6 @@
             this.LoadingPanel.ResumeLayout(false);
             this.LoadingPanel.PerformLayout();
             this.contextMenuStrip2.ResumeLayout(false);
-            this.contextMenuStrip3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -219,9 +189,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem refreshProcesssesToolStripMenuItem;
         private System.Windows.Forms.Button RefreshButton;
-        private System.Windows.Forms.NotifyIcon notifyIcon1;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }
 

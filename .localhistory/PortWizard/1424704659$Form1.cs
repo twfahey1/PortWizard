@@ -171,7 +171,6 @@ namespace PortWizard
         private void Form1_Resize(object sender, EventArgs e)
         {
             ResizeThreeColumns(ProcessListView);
-            if (FormWindowState.Minimized == WindowState) Hide();
         }
 
         private void ProcessListView_MouseClick(object sender, MouseEventArgs e)
@@ -221,18 +220,6 @@ namespace PortWizard
         private void RefreshButton_Click(object sender, EventArgs e)
         {
             init();
-        }
-
-        private void notifyIcon1_DoubleClick(object sender, EventArgs e)
-        {
-            Show();
-            WindowState = FormWindowState.Normal;
-        }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Show();
-            WindowState = FormWindowState.Normal;
         }
     }
 }

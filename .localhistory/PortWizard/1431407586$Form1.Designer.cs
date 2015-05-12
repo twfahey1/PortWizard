@@ -44,13 +44,10 @@
             this.refreshProcesssesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RefreshButton = new System.Windows.Forms.Button();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoadingImage)).BeginInit();
             this.LoadingPanel.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
-            this.contextMenuStrip3.SuspendLayout();
             this.SuspendLayout();
             // 
             // ProcessListView
@@ -160,26 +157,10 @@
             // 
             // notifyIcon1
             // 
-            this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip3;
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "PortWizard - Check Ports";
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.DoubleClick += new System.EventHandler(this.notifyIcon1_DoubleClick);
-            // 
-            // contextMenuStrip3
-            // 
-            this.contextMenuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
-            this.contextMenuStrip3.Name = "contextMenuStrip3";
-            this.contextMenuStrip3.Size = new System.Drawing.Size(114, 26);
-            this.contextMenuStrip3.Text = "Restore";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(113, 22);
-            this.toolStripMenuItem1.Text = "Restore";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // Form1
             // 
@@ -199,7 +180,6 @@
             this.LoadingPanel.ResumeLayout(false);
             this.LoadingPanel.PerformLayout();
             this.contextMenuStrip2.ResumeLayout(false);
-            this.contextMenuStrip3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -220,8 +200,6 @@
         private System.Windows.Forms.ToolStripMenuItem refreshProcesssesToolStripMenuItem;
         private System.Windows.Forms.Button RefreshButton;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }
 

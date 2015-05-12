@@ -228,11 +228,5 @@ namespace PortWizard
             Show();
             WindowState = FormWindowState.Normal;
         }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Show();
-            WindowState = FormWindowState.Normal;
-        }
     }
 }
